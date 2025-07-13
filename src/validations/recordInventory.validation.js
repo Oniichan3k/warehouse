@@ -1,5 +1,5 @@
-const joi = require("joi");
-const { ObjectId } = require("./custom.validation");
+import joi from "joi";
+import { ObjectId } from "./custom.validation.js";
 
 const createdRecordInventory = {
   body: joi.object({
@@ -129,7 +129,7 @@ const searchRecordInventory = {
   }),
 };
 
-module.exports = {
+const recordInventoryValidation = {
   createdRecordInventory,
   updatedStatusRecordInventory,
   deletedRecordInventory,
@@ -137,3 +137,5 @@ module.exports = {
   getRecordInventories,
   searchRecordInventory,
 };
+
+export default recordInventoryValidation;

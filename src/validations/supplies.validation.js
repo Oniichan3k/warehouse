@@ -228,7 +228,7 @@ const searchSupply = {
   }),
 };
 
-export default {
+const suppliesValidation = {
   createdSupply,
   updatedSupply,
   deletedSupply,
@@ -236,3 +236,5 @@ export default {
   getSupplies,
   searchSupply,
 };
+
+export default suppliesValidation;

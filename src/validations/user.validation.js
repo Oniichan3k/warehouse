@@ -289,7 +289,7 @@ const uploadAvatar = {
   }),
 };
 
-export default {
+const userValidation = {
   register,
   verifyOTP,
   login,
@@ -301,3 +301,5 @@ export default {
   uploadAvatar,
   resendOTP,
 };
+
+export default userValidation;

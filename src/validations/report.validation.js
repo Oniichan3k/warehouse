@@ -7,6 +7,8 @@ const reportExportImportInventory = {
   }),
 };
 
-export default {
+const reportValidation = {
   reportExportImportInventory,
 };
+
+export default reportValidation;
