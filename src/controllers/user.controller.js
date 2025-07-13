@@ -166,7 +166,7 @@ const getRefreshToken = catchAsync(async (req, res) => {
         refreshToken: newRefreshToken,
       },
     });
-  } catch (error) {
+  } catch {
     throw new ApiError(httpStatus.UNAUTHORIZED, "Invalid refresh token");
   }
 });
@@ -285,8 +285,8 @@ const uploadAvatar = catchAsync(async (req, res) => {
     },
   });
 
-  const uploadPromises = new Promise((resolve, reject) => {
-    blobStream.on("error", (error) => {
+  const uploadPromises = new Promise((resolve) => {
+    blobStream.on("error", () => {
 
       throw new ApiError(httpStatus.INTERNAL_SERVER_ERROR, "Failed to upload avatar!");
     });

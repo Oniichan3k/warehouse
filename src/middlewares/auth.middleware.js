@@ -25,7 +25,7 @@ const auth = catchAsync(async (req, res, next) => {
 
     req.user = user;
     next();
-  } catch (error) {
+  } catch {
     throw new ApiError(httpStatus.UNAUTHORIZED, "Invalid token");
   }
 });
