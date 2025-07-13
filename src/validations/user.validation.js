@@ -1,6 +1,6 @@
-const joi = require('joi');
-const { validateEmail } = require('./utils.validation');
-const { ObjectId } = require('./custom.validation');
+import joi from 'joi';
+import { validateEmail } from './utils.validation.js';
+import { ObjectId } from './custom.validation.js';
 
 const register = {
   body: joi.object({
@@ -289,7 +289,7 @@ const uploadAvatar = {
   }),
 };
 
-module.exports = {
+export default {
   register,
   verifyOTP,
   login,

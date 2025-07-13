@@ -1,4 +1,5 @@
-const joi = require("joi");
+import joi from "joi";
+
 const reportExportImportInventory = {
   query: joi.object({
     timeStart: joi.date().optional().allow(""),
@@ -6,6 +7,6 @@ const reportExportImportInventory = {
   }),
 };
 
-module.exports = {
+export default {
   reportExportImportInventory,
 };
