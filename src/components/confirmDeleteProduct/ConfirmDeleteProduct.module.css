@@ -1,0 +1,68 @@
+/* .body {
+  display: flex;
+  background-color: #c2c2c2;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} */
+.frame {
+  cursor: default;
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+}
+.frame .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+.frame p {
+  font-size: 18px;
+  color: black;
+  margin: 30px 0 50px 0;
+}
+.frame .confirm {
+  background-color: #0b08ab;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-right: 30px;
+  cursor: pointer;
+  width: 95px;
+  margin-bottom: 30px;
+}
+.frame .confirm:hover {
+  background-color: #080670;
+}
+.frame .cancel {
+  background-color: #fa0707;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 95px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.frame .cancel:hover {
+  background-color: #fa0707;
+}
+
+.btn-confirm-deleted {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

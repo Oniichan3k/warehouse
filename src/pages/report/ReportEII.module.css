@@ -1,0 +1,100 @@
+.reportEII-container {
+  background-color: #c2c2c2;
+  height: 100vh;
+  overflow: auto;
+  width: 100%;
+  padding: 15px 30px 60px 30px;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.REII-frame {
+  height: 85vh;
+  background-color: white;
+  width: 98%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.13);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.reportEII-h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #0b08ab;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.date-ReportEII {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.date-ReportEII1 {
+  padding-left: 37px;
+}
+
+.date-ReportEII2 {
+  padding-left: 10px;
+}
+
+.date-ReportEII3 {
+  background: #e9e9e9;
+  width: 104px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0 5px 10px;
+  outline: none;
+  font-size: 15px;
+  padding-left: 8px;
+}
+
+.reportEII-type {
+  margin-left: 10px;
+}
+
+.reportEII-select {
+  background: #e9e9e9;
+  width: 104px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0 5px 10px;
+  outline: none;
+  font-weight: 600;
+  color: #0b08ab;
+  padding-left: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.REII-barchart {
+  margin-top: 20px;
+  height: 70%;
+  width: 100%;
+  overflow: auto;
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(31,38,135,0.07);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.REII-barchart canvas {
+  width: auto !important;
+  min-width: 100%;
+  display: block;
+}

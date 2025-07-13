@@ -1,0 +1,95 @@
+.inforAgency {
+    width: 100%;
+    height: 90vh;
+    padding: 50px;
+    overflow: auto;
+}
+
+.inforAgency-form {
+    border-top: 1px solid #ccc;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    box-shadow: 10px 10px 10px #ccc;
+}
+
+.inforAgency-form-main {
+    padding-bottom: 50px;
+}
+
+.inforAgency-form-title {
+    background-color: grey;
+    color: white;
+    height: 70px;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 15px 15px 0px 0px;
+    font-size: 22px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inforAgency-form-row {
+    padding: 10px 60px;
+    display: flex;
+}
+
+.inforAgency-lbl {
+    flex-basis: 180px;
+    line-height: 50px;
+}
+
+.inforBox {
+    flex-basis: 700px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 18px;
+    border: 1px solid grey;
+}
+
+.inforAgency-nav {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.inforAgency p {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.updateAgency-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.updateAgency-btn .btn {
+    height: 50px;
+    line-height: 50px;
+    background-color: blue;
+    color: #fff;
+    width: 220px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.updateAgency-btn .btn:hover {
+    background-color: rgb(0, 0, 147);
+    cursor: pointer;
+}
+
+.close-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.close-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}

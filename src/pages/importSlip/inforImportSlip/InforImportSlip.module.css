@@ -1,0 +1,224 @@
+
+
+.container_infim {
+    width: 100%;
+    background-color: #c2c2c2;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 10px;
+    /* height: 130vh; */
+    max-height: 90vh;
+    overflow: auto;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.sub_infim {
+    background-color: white;
+    width: 800px;
+    border: 1px solid black;
+    height: auto;
+    padding: 10px 0px;
+}
+
+.cen_inf {
+    color: #0B08AB;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* .f1_infim{
+    
+} */
+.icon_x_inf {
+    float: right;
+    color: black;
+}
+
+.sub_box1_infim {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    column-gap: 55px;
+}
+
+.inp1_inf1 {
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+    overflow: auto;
+    border-radius: 3px;
+    background-color: white;
+    padding: 3px 10px;
+}
+
+.inp2_inf {
+    border: 1px solid black;
+    width: 200px;
+    height: 56px;
+    overflow: auto;
+    border-radius: 3px;
+    background-color: white;
+    padding: 3px 10px;
+}
+
+.box1_infim {
+    background-color: #c2c2c2;
+    padding: 30px;
+    margin: 0px 15px;
+}
+
+.flecx_inf {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inf_inf {
+    margin-bottom: 25px;
+}
+
+.List_infim {
+    border: 1px solid #888888;
+}
+
+.tr_infim .centerinfim {
+    background-color: #444444;
+    border: 3px solid #888888;
+
+}
+
+.sum_inf_1 {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.sum_inf_2 {
+    background-color: white;
+    color: black;
+
+}
+
+.box2_infim {
+    margin: 15px;
+}
+
+.top_sub_infim {
+    height: 70px;
+    line-height: 70px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.box3_infim {
+    background-color: #c2c2c2;
+    padding: 30px;
+    margin: 0px 15px;
+}
+
+.img_contract {
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.img_contract {
+    width: 160px;
+    height: 200px;
+}
+
+.rig_infim {
+    border: 1px solid black;
+    background-color: #E5E5E5;
+    margin: 70px 40px !important;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.flex2_inf {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.out_inf {
+    border: 1px solid #9F9F9F;
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 3px 10px;
+}
+
+.status_infim {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 10px;
+}
+
+.b1_infim {
+    background-color: #FFC19E;
+    border: none;
+    outline: none;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.b1_infim:hover {
+    background-color: #f57f3b;
+}
+
+.b2_infim {
+    background-color: #FFBC16;
+    border: none;
+    outline: none;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.b2_infim:hover {
+    background-color: #f8b303;
+}
+
+.b3_infim {
+    background-color: #EE4B3C;
+    border: none;
+    outline: none;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.b3_infim:hover {
+    background-color: #f71a06;
+}
+
+.b4_infim {
+    background-color: #888888;
+    border: none;
+    outline: none;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.b4_infim:hover {
+    background-color: #5a5959;
+}
+
+.lef_infim {
+    margin-left: 35px;
+}

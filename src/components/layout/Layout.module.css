@@ -1,0 +1,47 @@
+.layout-h {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.layout-n {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: calc(100vh - 70px);
+  width: 21%;
+  background: #fff;
+  z-index: 999;
+  transition: left 0.3s, width 0.3s;
+  border-right: 1px solid #eee;
+  overflow-y: auto;
+  display: block;
+}
+
+.layout-n.closed {
+  width: 0;
+  min-width: 0;
+  overflow: hidden;
+  border-right: none;
+  display: none;
+}
+
+.layout-m {
+  position: absolute;
+  top: 70px;
+  left: 21%;
+  width: 79%;
+  min-height: calc(100vh - 70px);
+  background: #f8f9fa;
+  padding: 24px;
+  transition: left 0.3s, width 0.3s;
+}
+
+.layout-m.full {
+  left: 0;
+  width: 100%;
+}

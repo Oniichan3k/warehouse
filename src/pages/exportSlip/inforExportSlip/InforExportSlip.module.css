@@ -1,0 +1,206 @@
+
+.exportForm-container{
+    background-color: #ccc;
+    height: 100vh;
+    overflow: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.exportForm-nav{
+    margin-bottom: 50px;
+}
+
+.exportForm-nav p{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.exportForm-main{
+    width: 75%;
+    height: 80vh;
+    overflow: auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1.5px solid black;
+}
+
+.exportForm-title{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.exportForm{
+    border: 1px solid black;
+    padding: 20px;
+    width: 100%;
+    background-color: #e4e4e4;
+}
+
+.exportForm-infor{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.exportForm-infor .col{
+    flex-basis: 400px;
+}
+
+.exportForm p{
+    font-weight: bold;
+    font-size: 18px;
+}
+.exportForm-infor .col-item{
+    display: flex;
+    padding: 10px 0;
+}
+.exportForm-infor .col-item label{
+    flex-basis: 100px;
+    line-height: 30px;
+}
+.exportForm-infor .ef-inforBox{
+    flex-basis: 300px;
+    border: 1px solid ;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.exportForm-infor .ef-formDescribe{
+    height: 100px;
+}
+.exportForm-listProduct table {
+    width: max-content;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 50px 0px;
+    background-color: #ededed;
+    width: 100%;
+}
+
+.exportForm-listProduct th,
+.exportForm-listProduct td {
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+
+.exportForm-listProduct th {
+    background-color: rgb(73, 73, 74);
+    color: #fff;
+}
+
+.ef-contract{
+    background-color: #e4e4e4;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.ef-contact-title{
+    font-weight: bold;
+}
+.ef-contract-img{
+    display: flex;
+    margin: 20px 0;
+}
+.ef-contract-img-item{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin-right: 20px;
+    background-color: #ccc;
+    line-height: 300px;
+    text-align: center;
+}
+
+.status-panel {
+    width: 250px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: 90px;
+    right: 50px;
+    height: 80vh;
+    overflow: auto;
+  }
+  .status-header{
+    margin-bottom: 10px;
+  }
+  
+  .status-group {
+    margin-bottom: 15px;
+    /* display : flex;
+    justify-content : space-between; */
+  }
+  
+  .status-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+  }
+  
+  .status-btn {
+    width: 40%;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    /* margin-left : 30px; */
+    
+  }
+  
+  .status-info {
+    min-height: 40px;
+    font-size: 16px;
+    color: #666;
+    /* margin-left : 30px; */
+    
+    
+  }
+  .status-info input {
+    width: 100%;
+    padding: 4px 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    
+
+  }
+  
+  /* .status-info .name {
+    margin-bottom: 2px;
+    
+    
+  }
+  
+  .status-info .time {
+    font-size: 11px;
+    
+  } */
+  
+  /* Button styles */
+  .delete { background:  #FFC19E;; color: white; }
+  .approve { background: #FFBC16;; color: black; }
+  .reject { background: #EE4B3C; color: white; }
+  .exported { 
+    background: #888888;
+    color: white;
+    /* opacity: 0.7; */
+    /* cursor: not-allowed; */
+  }
+  .return { background: #888888; color: white; }
+
+.col-item div{
+    overflow: auto;
+    -ms-overflow-style: none;
+}
+
+  

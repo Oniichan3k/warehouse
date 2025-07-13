@@ -1,0 +1,177 @@
+.listproductheader{
+    position: relative;
+}
+.ListProductkien {
+    width: 100%; 
+    height: 90vh; 
+    overflow: auto;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+}
+.daulist {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:100%;
+    height:150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-sec,
+.right-sec {
+    width: 40%; 
+    padding: 10px; 
+}
+
+.left-sec .mhhlistproduct,
+.right-sec .mhhlistproduct {
+    display: flex; 
+    justify-content: space-between;
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+.itemleft{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+.left-sec .listproductinput,
+.right-sec .listproductinput {
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 16px; 
+}
+
+.listproductinput:focus{
+    outline: none;
+    border: 1px solid #007bff;
+}
+.tklistproduct {
+    /* padding: 5px 10px; */
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+    margin-top: 45px;
+    margin-right: 20px;
+    width:150px ;
+    height:40px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tklistproduct:hover {
+    background-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.addButtonthem {
+    width: 145px;
+    height: 40px;
+    margin-left: 86%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.addButtonthem i {
+    margin-right: 5px;
+}
+
+.addButtonthem:hover {
+    background-color: #004085;
+}
+
+.listTable {
+    overflow-x: auto;
+}
+
+.Listkien {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.Listkien th, .Listkien .listtable3 {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    max-width: 500px;
+}
+
+.Listkien .listtable2 {
+    background-color: #0B08AB;
+    color: white;
+    font-weight: bold;
+}
+
+.Listkien tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.center {
+    text-align: center;
+     background-color: #0B08AB;
+    color: white;
+}
+
+.pen-product .fa-pen {
+    color: #007bff;
+    cursor: pointer;
+    /* margin-left: 15px; */
+}
+
+.bin-product .fa-trash-can {
+    color: #dc3545;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.fa-pen:hover {
+    color: #0056b3;
+}
+
+.fa-trash-can:hover {
+    color: #c82333;
+}
+
+.overlay{
+    position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 3;
+}
+
+.purple{
+    border: 1px solid #ccc;
+}

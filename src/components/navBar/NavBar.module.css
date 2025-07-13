@@ -1,0 +1,150 @@
+.main {
+    width: 270px;
+    min-width: 270px;
+    max-width: 270px;
+    height: 100vh;           /* Chiều cao cố định toàn màn hình */
+    overflow-y: auto;        /* Cho phép cuộn dọc khi nội dung dài */
+    border-right: 3px solid #0b08ab;
+    background: #fff;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 999;
+    border-radius: 0 18px 18px 0;
+    box-shadow: 0 6px 24px 0 rgba(31, 38, 135, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+}
+
+.navBar {
+    padding: 0;
+    font-size: 15px;
+    width: 100%;
+    background-color: #fff;
+    color: #0b08ab;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.hr {
+    border-top: 1.5px solid #0b08ab;
+    margin: 18px 0 0 0;
+    width: 90%;
+    align-self: center;
+}
+
+.navBarUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 32px 0 10px 0;
+}
+
+.userAvt {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.userAvt img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 3px solid #0b08ab;
+}
+
+.userName {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0b08ab;
+    margin-top: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.userName:hover {
+    text-decoration: underline;
+}
+
+.navBarMenu {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.navBarMenuItem p {
+    padding: 10px 0 10px 18px;
+    color: #0b08ab;
+    margin: 0;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navBarMenuItem p:hover {
+    color: #fff;
+    background-color: #255be7;
+    cursor: pointer;
+}
+
+.active {
+    color: #fff !important;
+    background-color: #0b08ab !important;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.active i {
+    color: #fff !important;
+}
+
+.icon-navbar {
+    color: #0b08ab;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.menuItemTitle {
+    font-weight: 700;
+    color: #0b08ab;
+    margin-top: 10px;
+    font-size: 15px;
+    padding-left: 0;
+}
+
+.subMenu {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.subMenuItem {
+    margin-left: 0;
+}
+
+.subMenuItem p {
+    margin-left: 0;
+    font-size: 14px;
+    color: #0b08ab;
+    padding: 7px 0 7px 8px;
+    border-radius: 6px;
+    gap: 8px;
+    font-weight: 400;
+}
+
+.subMenuItem p:hover {
+    background: #e6f0ff;
+    color: #0b08ab;
+}

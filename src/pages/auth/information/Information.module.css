@@ -1,0 +1,92 @@
+.info-header {
+  position: relative;
+}
+.infoBody {
+  width: 70%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: 25%;
+  position: relative;
+  padding: 20px 50px;
+  border-radius: 12px;
+  position: absolute;
+  top: 100px;
+}
+.infoContainer {
+  width: 100%;
+  /* height: 100%; */
+  /* margin-top: 20px; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 40px 50px;
+}
+.inforForm {
+  width: 70%;
+  height: 100%;
+  /* border-radius: 20px 20px 20px 20px; */
+  background: #ffffff;
+  /* padding: 20px 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.info-group-field {
+  margin-top: 2px;
+  display: flex;
+}
+.info-h2 {
+  font-size: 20px;
+  /* font-weight: 400; */
+  /* line-height: 35.46px; */
+  text-align: center;
+  color: rgb(64, 61, 213);
+  margin-bottom: 20px;
+}
+.info-label {
+  font-size: 15px;
+  margin-top: 20px;
+  /* font-weight: 400; */
+  /* line-height: 23.64px; */
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  width: 200px;
+}
+.info-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px;
+  border: 1px solid #dedbdb;
+  outline: none;
+  padding: 0 20px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.infoAvatar {
+  width: 150px;
+  height: 150px;
+  /* border-radius: 20px 0px 0px 20px; */
+  display: flex;
+  /* border-radius: 0px 20px 20px 0px; */
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 50%;
+}
+
+.infoImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* border-radius: 0px 20px 20px 0px; */
+}
