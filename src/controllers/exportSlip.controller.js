@@ -1,7 +1,7 @@
-const httpStatus = require("http-status");
-const ExportSlip = require("../models/exportSlip.model");
-const Product = require("../models/product.model");
-const catchAsync = require("../utils/catchAsync");
+import httpStatus from "http-status";
+import ExportSlip from "../models/exportSlip.model.js";
+import Product from "../models/product.model.js";
+import catchAsync from "../utils/catchAsync.js";
 
 const createdExportSlip = catchAsync(async (req, res) => {
   const {
@@ -365,7 +365,7 @@ const searchExportSlips = catchAsync(async (req, res) => {
   });
 });
 
-module.exports = {
+const exportSlipController = {
   createdExportSlip,
   getExportSlipById,
   deletedExportSlip,
@@ -373,3 +373,5 @@ module.exports = {
   getExportSlipByType,
   searchExportSlips,
 };
+
+export default exportSlipController;

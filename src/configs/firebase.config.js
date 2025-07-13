@@ -1,5 +1,5 @@
-require('dotenv').config();
-const admin = require('firebase-admin');
+import 'dotenv/config';
+import admin from 'firebase-admin';
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -30,4 +30,5 @@ admin.initializeApp({
   storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
 });
 
-module.exports = {firebaseConfig, admin};
+const firebaseConfigExport = {firebaseConfig, admin};
+export default firebaseConfigExport;

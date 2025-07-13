@@ -1,7 +1,7 @@
-const httpStatus = require("http-status");
-const ExportSlip = require("../models/exportSlip.model");
-const ImportSlip = require("../models/importSlip.model");
-const catchAsync = require("../utils/catchAsync");
+import httpStatus from "http-status";
+import ExportSlip from "../models/exportSlip.model.js";
+import ImportSlip from "../models/importSlip.model.js";
+import catchAsync from "../utils/catchAsync.js";
 
 const importExportRatio = catchAsync(async (req, res) => {
   const { timeStart, timeEnd } = req.query;
@@ -131,8 +131,10 @@ const importWithSource = catchAsync(async (req, res) => {
   });
 });
 
-module.exports = {
+const generalStatisticsController = {
   importExportRatio,
   exportWithSource,
   importWithSource,
 };
+
+export default generalStatisticsController;

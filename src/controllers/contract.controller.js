@@ -1,6 +1,6 @@
-const httpStatus = require("http-status");
-const Contract = require("../models/contract.model");
-const catchAsync = require("../utils/catchAsync");
+import httpStatus from "http-status";
+import Contract from "../models/contract.model.js";
+import catchAsync from "../utils/catchAsync.js";
 
 const createdContract = catchAsync(async (req, res) => {
   const { contractContent, fileUrls } = req.body;
@@ -21,6 +21,8 @@ const createdContract = catchAsync(async (req, res) => {
   });
 });
 
-module.exports = {
+const contractController = {
   createdContract,
 };
+
+export default contractController;
