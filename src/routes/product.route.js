@@ -1,12 +1,12 @@
-const express = require('express');
+import express from 'express';
 
-const validate = require('@/middlewares/validate.middleware');
-const productController = require('@/controllers/product.controller');
-const productValidation = require('@/validations/product.validation');
-const { auth } = require('@/middlewares/auth.middleware');
-const upload = require('@/middlewares/upload.middleware');
-const { roleMiddleware } = require('@/middlewares/role.middleware');
-const uploadFiles = require('@/controllers/upload.controller');
+import validate from '@/middlewares/validate.middleware.js';
+import productController from '@/controllers/product.controller.js';
+import productValidation from '@/validations/product.validation.js';
+import { auth } from '@/middlewares/auth.middleware.js';
+import upload from '@/middlewares/upload.middleware.js';
+import { roleMiddleware } from '@/middlewares/role.middleware.js';
+import uploadFiles from '@/controllers/upload.controller.js';
 
 const productRouter = express.Router();
 
@@ -17,4 +17,4 @@ productRouter.get('/getProductById/:productId', auth, validate(productValidation
 productRouter.get('/getProducts', auth, validate(productValidation.getProducts), productController.getProducts);
 productRouter.get('/searchProduct', auth, validate(productValidation.searchProduct), productController.searchProduct);
 
-module.exports = productRouter;
+export default productRouter;

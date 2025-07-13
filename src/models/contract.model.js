@@ -1,4 +1,4 @@
-const { Schema, default: mongoose } = require('mongoose');
+import { Schema, default as mongoose } from 'mongoose';
 
 const contractSchema = new Schema({
   contractContent: {
@@ -12,4 +12,4 @@ const contractSchema = new Schema({
 });
 
 const Contract = mongoose.model('Contract', contractSchema);
-module.exports = Contract;
+export default Contract;

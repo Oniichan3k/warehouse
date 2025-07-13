@@ -1,8 +1,8 @@
-const express = require("express");
-const validate = require("@/middlewares/validate.middleware");
-const generalStatisticsValidation = require("@/validations/generalStatistics.validation");
-const generalStatisticsController = require("@/controllers/generalStatistics.controller");
-const {auth} = require("@/middlewares/auth.middleware");
+import express from "express";
+import validate from "@/middlewares/validate.middleware.js";
+import generalStatisticsValidation from "@/validations/generalStatistics.validation.js";
+import generalStatisticsController from "@/controllers/generalStatistics.controller.js";
+import {auth} from "@/middlewares/auth.middleware.js";
 
 const generalStatisticsRouter = express.Router();
 
@@ -27,4 +27,4 @@ generalStatisticsRouter.get(
   generalStatisticsController.importWithSource
 );
 
-module.exports = generalStatisticsRouter;
+export default generalStatisticsRouter;

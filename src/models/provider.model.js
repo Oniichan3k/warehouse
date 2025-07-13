@@ -1,4 +1,4 @@
-const { Schema, default: mongoose } = require('mongoose');
+import { Schema, default as mongoose } from 'mongoose';
 
 const providerSchema = new Schema({
   providerCode: {
@@ -31,4 +31,4 @@ const providerSchema = new Schema({
 });
 
 const Provider = mongoose.model('Provider', providerSchema);
-module.exports = Provider;
+export default Provider;

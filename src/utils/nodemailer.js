@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 const sendEmail = async (email, fullname, otp) => {
   try {
     const transport = nodemailer.createTransport({
@@ -50,4 +50,4 @@ const sendEmailWhenForgetPassword = async (email, fullname) => {
 };
 
 
-module.exports = {sendEmail, sendEmailWhenForgetPassword};
+export {sendEmail, sendEmailWhenForgetPassword};

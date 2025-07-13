@@ -1,4 +1,4 @@
-const { Schema, default: mongoose } = require('mongoose');
+import { Schema, default as mongoose } from 'mongoose';
 
 const otpSchema = new Schema({
   otp: {
@@ -19,4 +19,4 @@ const otpSchema = new Schema({
 
 const OTP = mongoose.model('OTP', otpSchema);
 
-module.exports = OTP;
+export default OTP;

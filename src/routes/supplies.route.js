@@ -1,9 +1,9 @@
-const express = require('express');
-const validate = require('@/middlewares/validate.middleware');
-const suppliesController = require('@/controllers/supplies.controller');
-const suppliesValidation = require('@/validations/supplies.validation');
-const { auth } = require('@/middlewares/auth.middleware');
-const { roleMiddleware } = require('@/middlewares/role.middleware');
+import express from 'express';
+import validate from '@/middlewares/validate.middleware.js';
+import suppliesController from '@/controllers/supplies.controller.js';
+import suppliesValidation from '@/validations/supplies.validation.js';
+import { auth } from '@/middlewares/auth.middleware.js';
+import { roleMiddleware } from '@/middlewares/role.middleware.js';
 
 const suppliesRouter = express.Router();
 
@@ -14,4 +14,4 @@ suppliesRouter.get('/getSupplyById/:type/:supplyId', auth, validate(suppliesVali
 suppliesRouter.get('/getSupplies', auth, validate(suppliesValidation.getSupplies), suppliesController.getSupplies);
 suppliesRouter.get('/searchSupply', auth, validate(suppliesValidation.searchSupply), suppliesController.searchSupply);
 
-module.exports = suppliesRouter;
+export default suppliesRouter;

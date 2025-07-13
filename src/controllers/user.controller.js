@@ -1,13 +1,13 @@
-const bcrypt = require("bcrypt");
-const httpStatus = require("http-status");
-const jwt = require("jsonwebtoken");
+import bcrypt from "bcrypt";
+import httpStatus from "http-status";
+import jwt from "jsonwebtoken";
 
-const User = require("@/models/user.model");
-const OTP = require("../models/otp.model");
-const ApiError = require("@/utils/apiError");
-const catchAsync = require("@/utils/catchAsync");
-const { sendEmail, sendEmailWhenForgetPassword } = require("../utils/nodemailer");
-const { admin } = require("../configs/firebase.config");
+import User from "@/models/user.model.js";
+import OTP from "../models/otp.model.js";
+import ApiError from "@/utils/apiError.js";
+import catchAsync from "@/utils/catchAsync.js";
+import { sendEmail, sendEmailWhenForgetPassword } from "../utils/nodemailer.js";
+import { admin } from "../configs/firebase.config.js";
 
 const register = catchAsync(async (req, res) => {
   const { staffCode, fullName, email, userName, password, role } = req.body;
@@ -326,7 +326,7 @@ const uploadAvatar = catchAsync(async (req, res) => {
 
 });
 
-module.exports = {
+const userController = {
   register,
   verifyOTP,
   login,
@@ -338,3 +338,5 @@ module.exports = {
   uploadAvatar,
   resendOTP
 };
+
+export default userController;

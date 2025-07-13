@@ -1,4 +1,4 @@
-const { Schema, default: mongoose } = require('mongoose');
+import { Schema, default as mongoose } from 'mongoose';
 
 const userSchema = new Schema({
   staffCode: {
@@ -57,5 +57,5 @@ const userSchema = new Schema({
 
 const User = mongoose.model('User', userSchema);
 
-module.exports = User;
+export default User;
 

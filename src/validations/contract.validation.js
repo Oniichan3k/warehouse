@@ -1,4 +1,4 @@
-const joi = require("joi");
+import joi from "joi";
 
 const createdContract = {
   body: joi.object({
@@ -20,6 +20,8 @@ const createdContract = {
   }),
 }
 
-module.exports = {
+const contractValidation = {
   createdContract,
 };
+
+export default contractValidation;

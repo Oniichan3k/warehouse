@@ -1,4 +1,4 @@
-const { Schema, default: mongoose } = require("mongoose");
+import { Schema, default as mongoose } from "mongoose";
 
 const recordInventorySchema = new Schema(
   {
@@ -79,4 +79,4 @@ const RecordInventory = mongoose.model(
   "RecordInventory",
   recordInventorySchema
 );
-module.exports = RecordInventory;
+export default RecordInventory;

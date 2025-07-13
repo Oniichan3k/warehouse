@@ -1,10 +1,10 @@
-const express = require("express");
+import express from "express";
 
-const validate = require("../middlewares/validate.middleware");
-const reportController = require("../controllers/report.controller");
-const reportValidation = require("../validations/report.validation");
-const { auth } = require("../middlewares/auth.middleware");
-const { roleMiddleware } = require("../middlewares/role.middleware");
+import validate from "../middlewares/validate.middleware.js";
+import reportController from "../controllers/report.controller.js";
+import reportValidation from "../validations/report.validation.js";
+import { auth } from "../middlewares/auth.middleware.js";
+import { roleMiddleware } from "../middlewares/role.middleware.js";
 
 const reportRouter = express.Router();
 
@@ -15,4 +15,4 @@ reportRouter.get(
   reportController.reportExportImportInventory
 );
 
-module.exports = reportRouter;
+export default reportRouter;

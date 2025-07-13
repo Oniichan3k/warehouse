@@ -1,4 +1,4 @@
-const { Schema, default: mongoose } = require('mongoose');
+import { Schema, default as mongoose } from 'mongoose';
 
 
 const agencySchema = new Schema({
@@ -32,5 +32,5 @@ const agencySchema = new Schema({
 });
 
 const Agency = mongoose.model('Agency', agencySchema);
-module.exports = Agency;
+export default Agency;
 

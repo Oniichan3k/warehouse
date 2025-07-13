@@ -1,7 +1,7 @@
-const RecordInventory = require("../models/recordInventory.model");
-const catchAsync = require("../utils/catchAsync");
-const ApiError = require("../utils/apiError");
-const httpStatus = require("http-status");
+import RecordInventory from "../models/recordInventory.model.js";
+import catchAsync from "../utils/catchAsync.js";
+import ApiError from "../utils/apiError.js";
+import httpStatus from "http-status";
 
 const createdRecordInventory = catchAsync(async (req, res) => {
   const {
@@ -191,7 +191,7 @@ const searchRecordInventory = catchAsync(async (req, res) => {
   });
 });
 
-module.exports = {
+const recordInventoryController = {
   createdRecordInventory,
   updatedStatusRecordInventory,
   deletedRecordInventory,
@@ -199,3 +199,5 @@ module.exports = {
   getRecordInventories,
   searchRecordInventory,
 };
+
+export default recordInventoryController;

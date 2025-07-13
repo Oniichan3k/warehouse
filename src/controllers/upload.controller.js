@@ -1,7 +1,7 @@
-const catchAsync = require('../utils/catchAsync');
-const ApiError = require('../utils/apiError');
-const httpStatus = require('http-status');
-const { admin } = require('../configs/firebase.config');
+import catchAsync from '../utils/catchAsync.js';
+import ApiError from '../utils/apiError.js';
+import httpStatus from 'http-status';
+import { admin } from '../configs/firebase.config.js';
 
 const uploadFiles = catchAsync(async (req, res, next) => {
 
@@ -41,4 +41,4 @@ const uploadFiles = catchAsync(async (req, res, next) => {
 
 });
 
-module.exports = uploadFiles;
+export default uploadFiles;

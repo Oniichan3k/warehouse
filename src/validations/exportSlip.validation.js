@@ -1,5 +1,5 @@
-const joi = require("joi");
-const { ObjectId } = require("./custom.validation");
+import joi from "joi";
+import { ObjectId } from "./custom.validation.js";
 
 const createdExportSlip = {
   body: joi.object({
@@ -328,11 +328,13 @@ const searchExportSlips = {
   }),
 }
 
-module.exports = {
+const exportSlipValidation = {
   createdExportSlip,
   getExportSlipById,
   deletedExportSlip,
   updatedStatusExportSlip,
   getExportSlipByType,
   searchExportSlips,
-}
+};
+
+export default exportSlipValidation;

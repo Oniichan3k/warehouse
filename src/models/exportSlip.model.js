@@ -1,5 +1,5 @@
 
-const { Schema, default: mongoose } = require('mongoose');
+import { Schema, default as mongoose } from 'mongoose';
 const exportSlipSchema = new Schema({
   exportSlipCode: {
     type: String,
@@ -83,4 +83,4 @@ const exportSlipSchema = new Schema({
 });
 
 const ExportSlip = mongoose.model('ExportSlip', exportSlipSchema);
-module.exports = ExportSlip;
+export default ExportSlip;

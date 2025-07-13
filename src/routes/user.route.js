@@ -1,13 +1,13 @@
 
-const express = require('express');
+import express from 'express';
 
-const validate = require('../middlewares/validate.middleware');
+import validate from '../middlewares/validate.middleware.js';
 
-const userController = require('../controllers/user.controller');
-const userValidation = require('../validations/user.validation');
-const { auth } = require('../middlewares/auth.middleware');
-const upload = require('../middlewares/upload.middleware');
-// const uploadFiles = require('../controllers/upload.controller');
+import userController from '../controllers/user.controller.js';
+import userValidation from '../validations/user.validation.js';
+import { auth } from '../middlewares/auth.middleware.js';
+import upload from '../middlewares/upload.middleware.js';
+// import uploadFiles from '../controllers/upload.controller.js';
 const userRouter = express.Router();
 
 userRouter.post('/register', validate(userValidation.register), userController.register);
@@ -21,4 +21,4 @@ userRouter.post('/forgot-password', validate(userValidation.forgotPassword), use
 userRouter.put('/edit-profile/:userId', auth, validate(userValidation.editProfile), userController.editProfile);
 userRouter.post('/upload-avatar/:userId', auth, upload.single('avatar'), validate(userValidation.uploadAvatar), userController.uploadAvatar);
 
-module.exports = userRouter;
+export default userRouter;

@@ -1,5 +1,5 @@
-const joi = require('joi');
-const { ObjectId } = require('./custom.validation');
+import joi from 'joi';
+import { ObjectId } from './custom.validation.js';
 
 const createdProduct = {
   body: joi.object({
@@ -195,7 +195,7 @@ const searchProduct = {
   }),
 };
 
-module.exports = {
+const productValidation = {
   createdProduct,
   updatedProduct,
   deleteProduct,
@@ -203,3 +203,5 @@ module.exports = {
   getProducts,
   searchProduct,
 };
+
+export default productValidation;

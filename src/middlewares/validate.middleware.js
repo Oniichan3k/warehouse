@@ -1,4 +1,4 @@
-const httpStatus = require("http-status");
+import httpStatus from "http-status";
 
 const validate = (schema) => async (req, res, next) => {
   for (const key in schema) {
@@ -19,4 +19,4 @@ const validate = (schema) => async (req, res, next) => {
   next();
 };
 
-module.exports = validate;
+export default validate;

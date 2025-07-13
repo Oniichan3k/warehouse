@@ -1,9 +1,9 @@
-const express = require("express");
+import express from "express";
 
-const validate = require("../middlewares/validate.middleware");
-const recordInventoryController = require("../controllers/recordInventory.controller");
-const recordInventoryValidation = require("../validations/recordInventory.validation");
-const { auth } = require("../middlewares/auth.middleware");
+import validate from "../middlewares/validate.middleware.js";
+import recordInventoryController from "../controllers/recordInventory.controller.js";
+import recordInventoryValidation from "../validations/recordInventory.validation.js";
+import { auth } from "../middlewares/auth.middleware.js";
 
 const recordInventoryRouter = express.Router();
 
@@ -49,4 +49,4 @@ recordInventoryRouter.get(
   recordInventoryController.searchRecordInventory
 );
 
-module.exports = recordInventoryRouter;
+export default recordInventoryRouter;

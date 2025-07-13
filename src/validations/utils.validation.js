@@ -3,6 +3,6 @@ const validateEmail = (email) => {
   return re.test(String(email).toLowerCase());
 }
 
-module.exports = {
+export {
   validateEmail,
 };

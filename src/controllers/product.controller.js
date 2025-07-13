@@ -1,8 +1,8 @@
 
-const httpStatus = require("http-status");
-const Product = require("@/models/product.model");
-const catchAsync = require("@/utils/catchAsync");
-const ApiError = require("@/utils/apiError");
+import httpStatus from "http-status";
+import Product from "@/models/product.model.js";
+import catchAsync from "@/utils/catchAsync.js";
+import ApiError from "@/utils/apiError.js";
 
 const createdProduct = catchAsync(async (req, res) => {
   const { productCode, productName, productGroup, fileUrls, productDescription, productDVT, productPrice } = req.body;
@@ -168,7 +168,7 @@ const searchProduct = catchAsync(async (req, res) => {
 });
 
 
-module.exports = {
+const productController = {
   createdProduct,
   updatedProduct,
   deleteProduct,
@@ -176,3 +176,5 @@ module.exports = {
   getProducts,
   searchProduct,
 };
+
+export default productController;

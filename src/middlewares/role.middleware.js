@@ -1,4 +1,4 @@
-const catchAsync = require("../utils/catchAsync");
+import catchAsync from "../utils/catchAsync.js";
 
 const roleMiddleware = (req, res, next) => {
   const allowedRoles = ["admin", "manager", "staff"]; 
@@ -10,4 +10,4 @@ const roleMiddleware = (req, res, next) => {
   next();
 };
 
-module.exports = { roleMiddleware };
+export { roleMiddleware };

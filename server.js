@@ -1,20 +1,20 @@
-require("dotenv").config();
-require("module-alias/register");
-const express = require("express");
-const cors = require("cors");
+import "dotenv/config";
+import "module-alias/register";
+import express from "express";
+import cors from "cors";
 const app = express();
 
-const { connectDB } = require("@/utils/db");
+import { connectDB } from "@/utils/db.js";
 const PORT = process.env.PORT;
-const userRouter = require("@/routes/user.route");
-const productRouter = require("@/routes/product.route");
-const suppliesRouter = require("@/routes/supplies.route");
-const importSlipRouter = require("@/routes/importSlip.route");
-const contractRouter = require("@/routes/contract.route");
-const exportSlipRouter = require("@/routes/exportSlip.route");
-const generalStatisticsRouter = require("@/routes/generalStatistics.route");
-const reportRouter = require("@/routes/report.route");
-const recordInventoryRouter = require("@/routes/recordInventory.route");
+import userRouter from "@/routes/user.route.js";
+import productRouter from "@/routes/product.route.js";
+import suppliesRouter from "@/routes/supplies.route.js";
+import importSlipRouter from "@/routes/importSlip.route.js";
+import contractRouter from "@/routes/contract.route.js";
+import exportSlipRouter from "@/routes/exportSlip.route.js";
+import generalStatisticsRouter from "@/routes/generalStatistics.route.js";
+import reportRouter from "@/routes/report.route.js";
+import recordInventoryRouter from "@/routes/recordInventory.route.js";
 
 app.use(express.json());
 app.use(cors());

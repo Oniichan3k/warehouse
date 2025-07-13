@@ -1,4 +1,4 @@
-const httpStatus = require('http-status');
+import httpStatus from 'http-status';
 
 class ApiError extends Error {
   constructor(status = httpStatus.BAD_REQUEST, message = '') {
@@ -7,4 +7,4 @@ class ApiError extends Error {
   }
 }
 
-module.exports = ApiError;
+export default ApiError;

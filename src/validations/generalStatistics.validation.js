@@ -1,4 +1,4 @@
-const joi = require("joi");
+import joi from "joi";
 
 const importExportRatio = {
   query: joi.object({
@@ -33,8 +33,10 @@ const importWithSource = {
   }),
 };
 
-module.exports = {
+const generalStatisticsValidation = {
   importExportRatio,
   exportWithSource,
   importWithSource,
 };
+
+export default generalStatisticsValidation;

@@ -1,7 +1,7 @@
-const httpStatus = require("http-status");
-const ImportSlip = require("../models/importSlip.model");
-const Product = require("../models/product.model");
-const catchAsync = require("../utils/catchAsync");
+import httpStatus from "http-status";
+import ImportSlip from "../models/importSlip.model.js";
+import Product from "../models/product.model.js";
+import catchAsync from "../utils/catchAsync.js";
 
 const createdImportSlip = catchAsync(async (req, res) => {
   const {
@@ -364,7 +364,7 @@ const searchImportSlips = catchAsync(async (req, res) => {
   });
 });
 
-module.exports = {
+const importSlipController = {
   createdImportSlip,
   getImportSlipById,
   deletedImportSlip,
@@ -372,3 +372,5 @@ module.exports = {
   getImportSlipByType,
   searchImportSlips,
 };
+
+export default importSlipController;

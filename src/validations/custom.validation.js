@@ -5,4 +5,4 @@ const ObjectId = (value, helpers) => {
   return value;
 };
 
-module.exports = { ObjectId };
+export { ObjectId };

@@ -1,8 +1,8 @@
-const httpStatus = require("http-status");
-const catchAsync = require("@/utils/catchAsync");
-const ApiError = require("@/utils/apiError");
-const Agency = require("../models/agency.model");
-const Provider = require("../models/provider.model");
+import httpStatus from "http-status";
+import catchAsync from "@/utils/catchAsync.js";
+import ApiError from "@/utils/apiError.js";
+import Agency from "../models/agency.model.js";
+import Provider from "../models/provider.model.js";
 
 const createdSupply = catchAsync(async (req, res) => {
   const { code, name, address, phone, email, representative, type } = req.body;
@@ -305,7 +305,7 @@ const searchSupply = catchAsync(async (req, res) => {
   });
 });
 
-module.exports = {
+const suppliesController = {
   createdSupply,
   updatedSupply,
   deletedSupply,
@@ -313,3 +313,5 @@ module.exports = {
   getSupplies,
   searchSupply,
 };
+
+export default suppliesController;

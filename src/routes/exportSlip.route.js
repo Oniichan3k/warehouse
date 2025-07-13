@@ -1,9 +1,9 @@
-const express = require('express');
+import express from 'express';
 
-const validate = require('@/middlewares/validate.middleware');
-const exportSlipController = require('@/controllers/exportSlip.controller');
-const exportSlipValidation = require('@/validations/exportSlip.validation');
-const { auth } = require('@/middlewares/auth.middleware');
+import validate from '@/middlewares/validate.middleware.js';
+import exportSlipController from '@/controllers/exportSlip.controller.js';
+import exportSlipValidation from '@/validations/exportSlip.validation.js';
+import { auth } from '@/middlewares/auth.middleware.js';
 
 const exportSlipRouter = express.Router();
 
@@ -14,4 +14,4 @@ exportSlipRouter.delete('/:exportSlipId', auth, validate(exportSlipValidation.de
 exportSlipRouter.put('/:exportSlipId', auth, validate(exportSlipValidation.updatedStatusExportSlip), exportSlipController.updatedStatusExportSlip);
 exportSlipRouter.get('/', auth, validate(exportSlipValidation.getExportSlipByType), exportSlipController.getExportSlipByType);
 
-module.exports = exportSlipRouter;
+export default exportSlipRouter;

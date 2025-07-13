@@ -1,8 +1,8 @@
-const httpStatus = require("http-status");
-const ImportSlip = require("../models/importSlip.model");
-const catchAsync = require("../utils/catchAsync");
-const ExportSlip = require("../models/exportSlip.model");
-const Product = require("../models/product.model");
+import httpStatus from "http-status";
+import ImportSlip from "../models/importSlip.model.js";
+import catchAsync from "../utils/catchAsync.js";
+import ExportSlip from "../models/exportSlip.model.js";
+import Product from "../models/product.model.js";
 
 const reportExportImportInventory = catchAsync(async (req, res) => {
   const { timeStart, timeEnd } = req.query;
@@ -89,7 +89,9 @@ const reportExportImportInventory = catchAsync(async (req, res) => {
 });
 
 
-module.exports = {
+const reportController = {
 
   reportExportImportInventory,
 };
+
+export default reportController;
